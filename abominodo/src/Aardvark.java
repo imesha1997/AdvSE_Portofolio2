@@ -41,10 +41,11 @@ public class Aardvark {
         }
       }
     }
-    if (count != 28) {
+    if (count == 28) {
+    	return;
+    }
       System.out.println("something went wrong generating dominoes");
       System.exit(0);
-    }
   }
 
   private void generateGuesses() {
@@ -57,10 +58,11 @@ public class Aardvark {
         count++;
       }
     }
-    if (count != 28) {
+    if (count == 28) {
+    	return;
+    }
       System.out.println("something went wrong generating dominoes");
       System.exit(0);
-    }
   }
 
   void collateGrid() {
@@ -150,18 +152,14 @@ public class Aardvark {
         y++;
       }
     }
-    if (count != 28) {
+    if (count == 28) {
+    	return;
+    }
       System.out.println("something went wrong generating dominoes");
       System.exit(0);
-    }
   }
 
   private void rotateDominoes() {
-    // for (Domino d : dominoes) {
-    // if (Math.random() > 0.5) {
-    // System.out.println("rotating " + d);
-    // }
-    // }
     for (int x = 0; x < 7; x++) {
       for (int y = 0; y < 6; y++) {
 
