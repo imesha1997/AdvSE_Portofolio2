@@ -22,6 +22,7 @@ public class Domino implements Comparable<Domino> {
     placed = true;
   }
 
+  @Override
   public String toString() {
 	 StringBuilder result = new StringBuilder();
     result.append("[");
@@ -61,7 +62,7 @@ public class Domino implements Comparable<Domino> {
     return hy==ly;
   }
 
-
+  @Override
   public int compareTo(Domino arg0) {
     if(this.high < arg0.high){
       return 1;
