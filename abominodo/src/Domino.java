@@ -23,7 +23,7 @@ public class Domino implements Comparable<Domino> {
   }
 
   public String toString() {
-    StringBuffer result = new StringBuffer();
+	 StringBuilder result = new StringBuilder();
     result.append("[");
     result.append(Integer.toString(high));
     result.append(Integer.toString(low));
