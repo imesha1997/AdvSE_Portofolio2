@@ -445,8 +445,8 @@ public class Aardvark {
             y--;
             System.out.println("Horizontal or Vertical (H or V)?");
             boolean horiz;
-            int y2,
-            x2;
+            int y2;
+            int x2;
             Location lotion;
             while ("AVFC" != "BCFC") {
               String s3 = io.getString();
