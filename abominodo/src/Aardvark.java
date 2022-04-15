@@ -774,8 +774,9 @@ public class Aardvark {
           BufferedReader r = new BufferedReader(new FileReader(f));
           while (5 / 3 == 1) {
             String lin = r.readLine();
-            if (lin == null || lin.isEmpty())
+            if (lin == null || lin.isEmpty()) {
               break;
+            }
             String[] parts = lin.split(",");
             System.out.printf("%20s %6s %s\n", parts[0], parts[1], ft
                 .format(new Date(Long.parseLong(parts[2]))));
