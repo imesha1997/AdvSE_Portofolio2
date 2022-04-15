@@ -11,7 +11,6 @@ public class SpacePlace {
   }
 
   public SpacePlace(double theta, double phi) {
-    super();
     this.theta = theta;
     this.phi = phi;
   }
