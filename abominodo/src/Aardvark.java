@@ -17,7 +17,7 @@ public class Aardvark {
   public int[][] grid = new int[7][8];
   public int[][] gg = new int[7][8];
   int mode = -1;
-  int cf;
+  int collectframe;
   int score;
   long startTime;
 
@@ -369,7 +369,7 @@ public class Aardvark {
         generateGuesses();
         collateGuessGrid();
         mode = 1;
-        cf = 0;
+        collectframe = 0;
         score = 0;
         startTime = System.currentTimeMillis();
         pf.PictureFrame(this);
@@ -566,14 +566,14 @@ public class Aardvark {
             }
             switch (yy) {
             case 0:
-              switch (cf) {
+              switch (collectframe) {
               case 0:
                 System.out.println("Well done");
                 System.out.println("You get a 3 point bonus for honesty");
                 score++;
                 score++;
                 score++;
-                cf++;
+                collectframe++;
                 break;
               case 1:
                 System.out
@@ -585,7 +585,7 @@ public class Aardvark {
                   score -= 100;
                 }
                 playerName = playerName + "(scoundrel)";
-                cf++;
+                collectframe++;
                 break;
               default:
                 System.out.println("Some people just don't learn");
